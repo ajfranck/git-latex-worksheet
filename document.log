@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.8.30)  21 FEB 2025 11:19
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.8.30)  26 FEB 2025 13:33
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -681,86 +681,66 @@ Overfull \hbox (28.86409pt too wide) in paragraph at lines 101--101
 
 
 ]
-Overfull \hbox (136.86409pt too wide) in paragraph at lines 113--113
- []        \OT1/pcr/m/n/10 git checkout HEAD@{1} # or alternatively next line:[] 
- []
-
-
-Overfull \hbox (100.86409pt too wide) in paragraph at lines 114--114
- []        \OT1/pcr/m/n/10 git reset --hard HEAD@{1} #where 1 is the idx[] 
- []
-
-
-Overfull \hbox (130.86409pt too wide) in paragraph at lines 143--143
- []    \OT1/pcr/m/n/10 git branch feature-branch  # Create a new branch for E[] 
- []
-
-
-Overfull \hbox (88.86409pt too wide) in paragraph at lines 150--150
- []    \OT1/pcr/m/n/10 git checkout main  # Switch back to main branch[] 
- []
-
-
-Overfull \hbox (76.86409pt too wide) in paragraph at lines 173--173
- []    \OT1/pcr/m/n/10 git merge feature-branch -m "Merge into main"[] 
+Overfull \hbox (22.86409pt too wide) in paragraph at lines 177--177
+ []    \OT1/pcr/m/n/10 git merge feature-branch -m "m main"[] 
  []
 
 [2]
-LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 223.
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 227.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 )
-Underfull \hbox (badness 10000) in paragraph at lines 237--238
+Underfull \hbox (badness 10000) in paragraph at lines 241--242
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 266--266
+Underfull \hbox (badness 10000) in paragraph at lines 270--270
 []\OT1/ptm/m/n/10 Einstein, Al-bert. ``Zur Elek-tro-dy-namik be-
  []
 
 
-Underfull \hbox (badness 1270) in paragraph at lines 266--266
+Underfull \hbox (badness 1270) in paragraph at lines 270--270
 \OT1/ptm/m/n/10 wegter K[]orper''. In: \OT1/ptm/m/it/10 An-nalen der Physik \OT1/ptm/m/n/10 322.10
  []
 
 
-Underfull \hbox (badness 1762) in paragraph at lines 266--266
+Underfull \hbox (badness 1762) in paragraph at lines 270--270
 \OT1/ptm/m/it/10 lantic \OT1/ptm/m/n/10 (Nov. 2015). \OT1/ptm/m/sc/10 url\OT1/ptm/m/n/10 : []$\OT1/pcr/m/n/10 https : / / www .
  []
 
 
-Underfull \hbox (badness 3068) in paragraph at lines 266--266
+Underfull \hbox (badness 3068) in paragraph at lines 270--270
 \OT1/pcr/m/n/10 2015 / 11 / the -[] algorithm -[] that -[]
  []
 
 [3]
-Underfull \hbox (badness 7415) in paragraph at lines 266--266
+Underfull \hbox (badness 7415) in paragraph at lines 270--270
 []\OT1/ptm/m/n/10 Overleaf. \OT1/ptm/m/it/10 Bib-li-og-ra-phy Man-age-ment with bib-
  []
 
 
-Underfull \hbox (badness 1205) in paragraph at lines 266--266
+Underfull \hbox (badness 1205) in paragraph at lines 270--270
 \OT1/ptm/m/it/10 tex\OT1/ptm/m/n/10 . ac-cessed 2025-02-11. 2025. \OT1/ptm/m/sc/10 url\OT1/ptm/m/n/10 : []$\OT1/pcr/m/n/10 https :
  []
 
 
-Underfull \hbox (badness 6542) in paragraph at lines 266--266
+Underfull \hbox (badness 6542) in paragraph at lines 270--270
 \OT1/pcr/m/n/10 / / www . overleaf . com / learn /
  []
 
 
-Underfull \hbox (badness 1424) in paragraph at lines 266--266
+Underfull \hbox (badness 1424) in paragraph at lines 270--270
 \OT1/ptm/m/n/10 Com-mu-ni-ca-tion''. In: \OT1/ptm/m/it/10 The Bell Sys-tem Tech-ni-cal
  []
 
 
-Underfull \hbox (badness 6110) in paragraph at lines 266--266
+Underfull \hbox (badness 6110) in paragraph at lines 270--270
 []\OT1/ptm/m/n/10 Veritasium. \OT1/ptm/m/it/10 Mis-con-cep-tions About Tem-per-a-ture\OT1/ptm/m/n/10 .
  []
 
 
-Underfull \hbox (badness 2884) in paragraph at lines 266--266
+Underfull \hbox (badness 2884) in paragraph at lines 270--270
 []\OT1/ptm/m/n/10 Wikipedia. \OT1/ptm/m/it/10 Bib-TeX\OT1/ptm/m/n/10 . ac-cessed 2025-02-11. 2025.
  []
 
@@ -782,7 +762,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  81i,9n,82p,887b,1533s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on document.pdf (4 pages, 90136 bytes).
+Output written on document.pdf (4 pages, 89820 bytes).
 PDF statistics:
  154 PDF objects out of 1000 (max. 8388607)
  136 compressed objects within 2 object streams

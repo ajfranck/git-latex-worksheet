@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber document"] 1740165176 "document.bcf" "document.bbl" "document" 1740165576 0
-  "document.bcf" 1740165576 108859 210e03f6aaf4f3bd259d5f034a2bdf98 "pdflatex"
+["biber document"] 1740165176 "document.bcf" "document.bbl" "document" 1740605622 0
+  "document.bcf" 1740605622 108859 210e03f6aaf4f3bd259d5f034a2bdf98 "pdflatex"
   (generated)
   "document.bbl"
   "document.blg"
   (rewritten before read)
-["pdflatex"] 1740165575 "/Users/1amaj/Library/CloudStorage/OneDrive-Personal/Desktop/School/Occidental/COMP 390/202502-comp-390-git-latex-worksheet/document.tex" "document.pdf" "document" 1740165576 0
-  "/Users/1amaj/Library/CloudStorage/OneDrive-Personal/Desktop/School/Occidental/COMP 390/202502-comp-390-git-latex-worksheet/document.tex" 1740165575 11643 9f8dc1342fc3de58f6459f64065b14b6 ""
+["pdflatex"] 1740605621 "/Users/1amaj/Library/CloudStorage/OneDrive-Personal/Desktop/School/Occidental/COMP 390/202502-comp-390-git-latex-worksheet/document.tex" "document.pdf" "document" 1740605622 0
+  "/Users/1amaj/Library/CloudStorage/OneDrive-Personal/Desktop/School/Occidental/COMP 390/202502-comp-390-git-latex-worksheet/document.tex" 1740605621 11609 7051a223ed69e449bf303cb4ddbda46e ""
   "/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/texlive/2023/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/adobe/courier/pcrr7t.tfm" 1136768653 960 379cc0019370a9e0208a0a3f949f847a ""
@@ -144,11 +144,11 @@
   "/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1693413990 4623355 b8cad38412faebe1ce5b780a45db67bd ""
   "/usr/local/texlive/2023/texmf-var/web2c/pdftex/pdflatex.fmt" 1693413948 7883451 66fe613fdb0f04c78c5bb75deefed975 ""
   "/usr/local/texlive/2023/texmf.cnf" 1678822455 577 1b2b1af17af2508fb20dd85783af4050 ""
-  "document.aux" 1740165576 3342 d2dee5d1637c945f40e6f0de33323c44 "pdflatex"
+  "document.aux" 1740605622 3342 d2dee5d1637c945f40e6f0de33323c44 "pdflatex"
   "document.bbl" 1740165179 11916 0e235a1a8f1fc36f5785a22090419e99 "biber document"
-  "document.out" 1740165576 802 e3a40b1faf79c63dd4eff2af937b0ee3 "pdflatex"
-  "document.run.xml" 1740165576 2333 a755dca3b7eb3f1fc4dc3636b0169f59 "pdflatex"
-  "document.tex" 1740165575 11643 9f8dc1342fc3de58f6459f64065b14b6 ""
+  "document.out" 1740605622 802 e3a40b1faf79c63dd4eff2af937b0ee3 "pdflatex"
+  "document.run.xml" 1740605622 2333 a755dca3b7eb3f1fc4dc3636b0169f59 "pdflatex"
+  "document.tex" 1740605621 11609 7051a223ed69e449bf303cb4ddbda46e ""
   "oxycomps.sty" 1740121787 3349 39a368bc2fa3cccb037002c229e00be1 ""
   (generated)
   "document.aux"

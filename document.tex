@@ -103,16 +103,20 @@ A---B---C---D
 
 \item Imagine you created a git repository for your project, but only commit your changes once a week on Sundays. You got your code working on Tuesday, but then broke your code on Friday. What can you do to get the working version of your code back?\\
     \textbf{Answer:}\\
-    Technically, if nothing is committed, the only thing you can really do is just try and fix your file. However, we can try a couple things that might work: checking stashed changes, checking reflog, or manually modifying a single file. Here are those three methods, in order:
+    Technically, if nothing is committed, the only thing you can really do is just try and fix your file. However, we can try a couple things that might work: checking stashed changes, checking reflog, or manually modifying a single file. Here are those three methods, in order:\\
+    \textbf{1.}
     \begin{verbatim}
         git stash list
         git stash apply 
     \end{verbatim}
+    \textbf{2.}
     \begin{verbatim}
         git reflog
-        git checkout HEAD@{1} # or alternatively next line:
-        git reset --hard HEAD@{1} #where 1 is the idx
+        #one of the below lines
+        git checkout HEAD@{1}
+        git reset --hard HEAD@{1} 
     \end{verbatim}
+    \textbf{3.}
     \begin{verbatim}
         git checkout -- file.txt
     \end{verbatim}
@@ -140,14 +144,14 @@ A---B---C---D
 
     git commit -am "Commit B"
 
-    git branch feature-branch  # Create a new branch for E
+    git branch feature-branch 
     git checkout feature-branch
 
     git commit -am "Commit E"
 
     git commit -am "Commit F"
 
-    git checkout main  # Switch back to main branch
+    git checkout main
     git commit -am "Commit C"
 
     git commit -am "Commit D"
@@ -170,7 +174,7 @@ A---B---C---D---G
     git commit -am "Commit F"
     
     git checkout main
-    git merge feature-branch -m "Merge into main"
+    git merge feature-branch -m "m main"
     git commit -am "Commit G"
       
 
