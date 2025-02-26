@@ -1,0 +1,307 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nyt/global//global/global}
+    \entry{einstein1905}{article}{}
+      \name{author}{1}{}{%
+        {{hash=3ebf53e52a3ce84f0ffb8553200a6a63}{%
+           family={Einstein},
+           familyi={E\bibinitperiod},
+           given={Albert},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{3ebf53e52a3ce84f0ffb8553200a6a63}
+      \strng{fullhash}{3ebf53e52a3ce84f0ffb8553200a6a63}
+      \strng{bibnamehash}{3ebf53e52a3ce84f0ffb8553200a6a63}
+      \strng{authorbibnamehash}{3ebf53e52a3ce84f0ffb8553200a6a63}
+      \strng{authornamehash}{3ebf53e52a3ce84f0ffb8553200a6a63}
+      \strng{authorfullhash}{3ebf53e52a3ce84f0ffb8553200a6a63}
+      \field{sortinit}{E}
+      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Annalen der Physik}
+      \field{number}{10}
+      \field{title}{Zur Elektrodynamik bewegter Körper}
+      \field{volume}{322}
+      \field{year}{1905}
+      \field{pages}{891\bibrangedash 921}
+      \range{pages}{31}
+      \verb{doi}
+      \verb 10.1002/andp.19053221004
+      \endverb
+    \endentry
+    \entry{python3}{manual}{}
+      \name{author}{1}{}{%
+        {{hash=9688a568902e4b07b60557b566bdd820}{%
+           family={Foundation},
+           familyi={F\bibinitperiod},
+           given={Python\bibnamedelima Software},
+           giveni={P\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \strng{namehash}{9688a568902e4b07b60557b566bdd820}
+      \strng{fullhash}{9688a568902e4b07b60557b566bdd820}
+      \strng{bibnamehash}{9688a568902e4b07b60557b566bdd820}
+      \strng{authorbibnamehash}{9688a568902e4b07b60557b566bdd820}
+      \strng{authornamehash}{9688a568902e4b07b60557b566bdd820}
+      \strng{authorfullhash}{9688a568902e4b07b60557b566bdd820}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed: 2021-09-01}
+      \field{title}{Python 3 Documentation}
+      \field{year}{2021}
+      \verb{urlraw}
+      \verb https://docs.python.org/3/
+      \endverb
+      \verb{url}
+      \verb https://docs.python.org/3/
+      \endverb
+    \endentry
+    \entry{knuth1968}{thesis}{}
+      \name{author}{1}{}{%
+        {{hash=ec08e6f01da5f3814f28a70c89c64656}{%
+           family={Knuth},
+           familyi={K\bibinitperiod},
+           given={Donald\bibnamedelima E.},
+           giveni={D\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Stanford University}%
+      }
+      \strng{namehash}{ec08e6f01da5f3814f28a70c89c64656}
+      \strng{fullhash}{ec08e6f01da5f3814f28a70c89c64656}
+      \strng{bibnamehash}{ec08e6f01da5f3814f28a70c89c64656}
+      \strng{authorbibnamehash}{ec08e6f01da5f3814f28a70c89c64656}
+      \strng{authornamehash}{ec08e6f01da5f3814f28a70c89c64656}
+      \strng{authorfullhash}{ec08e6f01da5f3814f28a70c89c64656}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{The Art of Computer Programming, Volume 1: Fundamental Algorithms}
+      \field{type}{phdthesis}
+      \field{year}{1968}
+    \endentry
+    \entry{monroe2015}{article}{}
+      \name{author}{1}{}{%
+        {{hash=58b0232a3d2c40bca017722bb78e3f07}{%
+           family={Monroe},
+           familyi={M\bibinitperiod},
+           given={Roberto\bibnamedelima G.},
+           giveni={R\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+      }
+      \strng{namehash}{58b0232a3d2c40bca017722bb78e3f07}
+      \strng{fullhash}{58b0232a3d2c40bca017722bb78e3f07}
+      \strng{bibnamehash}{58b0232a3d2c40bca017722bb78e3f07}
+      \strng{authorbibnamehash}{58b0232a3d2c40bca017722bb78e3f07}
+      \strng{authornamehash}{58b0232a3d2c40bca017722bb78e3f07}
+      \strng{authorfullhash}{58b0232a3d2c40bca017722bb78e3f07}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The Atlantic}
+      \field{month}{11}
+      \field{title}{The Algorithm That Makes Preschoolers Obsessed With YouTube}
+      \field{year}{2015}
+      \verb{urlraw}
+      \verb https://www.theatlantic.com/technology/archive/2015/11/the-algorithm-that-makes-preschoolers-obsessed-with-youtube/414163/
+      \endverb
+      \verb{url}
+      \verb https://www.theatlantic.com/technology/archive/2015/11/the-algorithm-that-makes-preschoolers-obsessed-with-youtube/414163/
+      \endverb
+    \endentry
+    \entry{morris1970}{inproceedings}{}
+      \name{author}{1}{}{%
+        {{hash=e72124f8c830de64524443c1beaf2d5f}{%
+           family={Morris},
+           familyi={M\bibinitperiod},
+           given={Robert},
+           giveni={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{e72124f8c830de64524443c1beaf2d5f}
+      \strng{fullhash}{e72124f8c830de64524443c1beaf2d5f}
+      \strng{bibnamehash}{e72124f8c830de64524443c1beaf2d5f}
+      \strng{authorbibnamehash}{e72124f8c830de64524443c1beaf2d5f}
+      \strng{authornamehash}{e72124f8c830de64524443c1beaf2d5f}
+      \strng{authorfullhash}{e72124f8c830de64524443c1beaf2d5f}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 1970 ACM SIGFIDET (now SIGMOD) Workshop on Data Description, Access and Control}
+      \field{series}{SIGFIDET '70}
+      \field{title}{Scatter Storage Techniques}
+      \field{year}{1970}
+      \field{pages}{6\bibrangedash 13}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1145/1734663.1734671
+      \endverb
+    \endentry
+    \entry{OverleafBibliographyManagement}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=80d685e90fa23d7996a66e45aa2d24ad}{%
+           family={Overleaf},
+           familyi={O\bibinitperiod}}}%
+      }
+      \strng{namehash}{80d685e90fa23d7996a66e45aa2d24ad}
+      \strng{fullhash}{80d685e90fa23d7996a66e45aa2d24ad}
+      \strng{bibnamehash}{80d685e90fa23d7996a66e45aa2d24ad}
+      \strng{authorbibnamehash}{80d685e90fa23d7996a66e45aa2d24ad}
+      \strng{authornamehash}{80d685e90fa23d7996a66e45aa2d24ad}
+      \strng{authorfullhash}{80d685e90fa23d7996a66e45aa2d24ad}
+      \field{sortinit}{O}
+      \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{accessed 2025-02-11}
+      \field{title}{Bibliography Management with bibtex}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://www.overleaf.com/learn/latex/Bibliography_management_with_bibtex
+      \endverb
+      \verb{url}
+      \verb https://www.overleaf.com/learn/latex/Bibliography_management_with_bibtex
+      \endverb
+    \endentry
+    \entry{shannon1948}{incollection}{}
+      \name{author}{1}{}{%
+        {{hash=536c91678d1dde76c9acd47047556291}{%
+           family={Shannon},
+           familyi={S\bibinitperiod},
+           given={Claude\bibnamedelima E.},
+           giveni={C\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Bell Labs}%
+      }
+      \strng{namehash}{536c91678d1dde76c9acd47047556291}
+      \strng{fullhash}{536c91678d1dde76c9acd47047556291}
+      \strng{bibnamehash}{536c91678d1dde76c9acd47047556291}
+      \strng{authorbibnamehash}{536c91678d1dde76c9acd47047556291}
+      \strng{authornamehash}{536c91678d1dde76c9acd47047556291}
+      \strng{authorfullhash}{536c91678d1dde76c9acd47047556291}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{The Bell System Technical Journal}
+      \field{month}{7}
+      \field{number}{3}
+      \field{title}{A Mathematical Theory of Communication}
+      \field{volume}{27}
+      \field{year}{1948}
+      \field{pages}{379\bibrangedash 423}
+      \range{pages}{45}
+      \verb{doi}
+      \verb 10.1002/j.1538-7305.1948.tb01338.x
+      \endverb
+    \endentry
+    \entry{turing1950}{book}{}
+      \name{author}{1}{}{%
+        {{hash=1210277649f3c7541e2750ee21da6237}{%
+           family={Turing},
+           familyi={T\bibinitperiod},
+           given={Alan\bibnamedelima M.},
+           giveni={A\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Mind}%
+      }
+      \strng{namehash}{1210277649f3c7541e2750ee21da6237}
+      \strng{fullhash}{1210277649f3c7541e2750ee21da6237}
+      \strng{bibnamehash}{1210277649f3c7541e2750ee21da6237}
+      \strng{authorbibnamehash}{1210277649f3c7541e2750ee21da6237}
+      \strng{authornamehash}{1210277649f3c7541e2750ee21da6237}
+      \strng{authorfullhash}{1210277649f3c7541e2750ee21da6237}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{number}{236}
+      \field{title}{Computing Machinery and Intelligence}
+      \field{volume}{LIX}
+      \field{year}{1950}
+      \field{pages}{433\bibrangedash 460}
+      \range{pages}{28}
+      \verb{doi}
+      \verb 10.1093/mind/LIX.236.433
+      \endverb
+    \endentry
+    \entry{veritasium2012}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=fb57e6cc4f0191011565336ff8cde407}{%
+           family={Veritasium},
+           familyi={V\bibinitperiod}}}%
+      }
+      \strng{namehash}{fb57e6cc4f0191011565336ff8cde407}
+      \strng{fullhash}{fb57e6cc4f0191011565336ff8cde407}
+      \strng{bibnamehash}{fb57e6cc4f0191011565336ff8cde407}
+      \strng{authorbibnamehash}{fb57e6cc4f0191011565336ff8cde407}
+      \strng{authornamehash}{fb57e6cc4f0191011565336ff8cde407}
+      \strng{authorfullhash}{fb57e6cc4f0191011565336ff8cde407}
+      \field{sortinit}{V}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{YouTube}
+      \field{month}{3}
+      \field{title}{Misconceptions About Temperature}
+      \field{year}{2012}
+      \verb{urlraw}
+      \verb https://www.youtube.com/watch?v=vqDbMEdLiCs
+      \endverb
+      \verb{url}
+      \verb https://www.youtube.com/watch?v=vqDbMEdLiCs
+      \endverb
+    \endentry
+    \entry{WikipediaBibtex}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=9c677286866aad38f8e9b660f5411814}{%
+           family={Wikipedia},
+           familyi={W\bibinitperiod}}}%
+      }
+      \strng{namehash}{9c677286866aad38f8e9b660f5411814}
+      \strng{fullhash}{9c677286866aad38f8e9b660f5411814}
+      \strng{bibnamehash}{9c677286866aad38f8e9b660f5411814}
+      \strng{authorbibnamehash}{9c677286866aad38f8e9b660f5411814}
+      \strng{authornamehash}{9c677286866aad38f8e9b660f5411814}
+      \strng{authorfullhash}{9c677286866aad38f8e9b660f5411814}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{accessed 2025-02-11}
+      \field{title}{BibTeX}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://en.wikipedia.org/wiki/BibTeX
+      \endverb
+      \verb{url}
+      \verb https://en.wikipedia.org/wiki/BibTeX
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

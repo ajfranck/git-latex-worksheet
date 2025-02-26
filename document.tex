@@ -1,0 +1,267 @@
+\documentclass[10pt,twocolumn]{article}
+
+% use the oxycomps style file
+\usepackage{oxycomps}
+
+% usage: \fixme[comments describing issue]{text to be fixed}
+% define \fixme as not doing anything special
+\newcommand{\fixme}[2][]{#2}
+% overwrite it so it shows up as red
+\renewcommand{\fixme}[2][]{\textcolor{red}{#2}}
+% overwrite it again so related text shows as footnotes
+%\renewcommand{\fixme}[2][]{\textcolor{red}{#2\footnote{#1}}}
+
+% read references.bib for the bibtex data
+\bibliography{references}
+
+% include metadata in the generated pdf file
+\pdfinfo{
+    /Title (Git and LaTeX Worksheet)
+    /Author (Justin Li)
+}
+
+% set the title and author information
+\title{Git and \LaTeX Worksheet}
+\author{Justin Li}
+\affiliation{Occidental College}
+\email{justinnhli@oxy.edu}
+
+\begin{document}
+
+\maketitle
+
+\section{Instructions}
+
+This worksheet is due March 1, 2025 at midnight, to be submitted as a GitHub repository URL to Canvas. The repository should contain all files requires to compile this worksheet with your answers. You should only change this \texttt{document.tex} file and the  \texttt{references.bib} file; do not change any other file in this starting repository. You should not use any additional packages, and are not allowed to use the \texttt{{\textbackslash}usepackage\{\}} command. Additionally, the output should be formatted correctly: your answers should be appropriately nested under the questions, command-line commands should be in monospace, and images should be positioned appropriately.
+
+\section{Git Questions}
+
+\subsection{General questions}
+
+\begin{enumerate}
+    \item What is a version control system? Why are they useful?\\
+    \textbf{Answer:}
+    A version control system is a system that records changes to a file or set of files over time. Useful to allow you to track changes, collaborate, and revert to previous versions.
+
+    \item What is the difference between git and GitHub?\\
+    \textbf{Answer:}
+    Git is a version control system, while GitHub is an actual platform that hosts the repositories.
+
+    \item What is a repository?\\
+    \textbf{Answer:}
+    A repository is a directory where git tracks your file changes.
+
+    \item What is a commit?\\
+    \textbf{Answer:}
+    A commit is a snapshot of changes made to a git repo at a specific point in time.
+
+    \item What is the commit graph?\\
+    \textbf{Answer:}
+    Commit graph is a representation of the history of commits in a repository.
+
+    \item What is your preferred local git client (eg., command line, GitHub Desktop, GitKraken, etc.)?\\
+    \textbf{Answer:}
+    GitKraken, but I can also use the command line depending on the scale of the project.
+
+\end{enumerate}
+
+\subsection{Local Usage}
+
+\begin{enumerate}
+\item What is the difference between adding a file to the staging area and committing a file?\\
+    \textbf{Answer:}
+    Adding a file to the staging area prepares the file to be committed, committing a file actually saves the changes to the repository.
+
+\item What is a commit message, and why is it important for them to be meaningful?\\
+    \textbf{Answer:}
+    Commit message is a message that the committer writes to describe the changes. It is important for them to be meaningful so that collaborators (and the original committer) can understand the changes made.
+
+\item Starting with an empty repository, what sequence of commands/actions would result in the following commit graph? You may give a sequence of \texttt{git} commands, or describe (with screenshots) how you would do this in your preferred graphical git interface.
+\begin{verbatim}
+A---B---C---D
+\end{verbatim}
+    \textbf{Answer:}
+\begin{verbatim}
+    git init
+    git add file.txt
+    git commit -m "commit a"
+
+    git commit -am "commit b"
+
+    git commit -am "commit c"
+
+    git commit -am "commit d"
+\end{verbatim}
+
+
+\item If you are currently at commit D above, how would you recover code from commit B? What sequence of commands/actions would let you do so? You may give a sequence of \texttt{git} command-line commands, or describe (with screenshots) how you would do this in your preferred graphical git interface. Assume the commit hashes are AAAAAA..., BBBBBB..., etc.\\
+    \textbf{Answer:}
+\begin{verbatim}
+    git checkout BBBBBB
+    git checkout -b recover-branch BBBBBB
+\end{verbatim}
+
+\item Imagine you created a git repository for your project, but only commit your changes once a week on Sundays. You got your code working on Tuesday, but then broke your code on Friday. What can you do to get the working version of your code back?\\
+    \textbf{Answer:}\\
+    Technically, if nothing is committed, the only thing you can really do is just try and fix your file. However, we can try a couple things that might work: checking stashed changes, checking reflog, or manually modifying a single file. Here are those three methods, in order:
+    \begin{verbatim}
+        git stash list
+        git stash apply 
+    \end{verbatim}
+    \begin{verbatim}
+        git reflog
+        git checkout HEAD@{1} # or alternatively next line:
+        git reset --hard HEAD@{1} #where 1 is the idx
+    \end{verbatim}
+    \begin{verbatim}
+        git checkout -- file.txt
+    \end{verbatim}
+
+\end{enumerate}
+
+\subsection{Branching and Merging}
+
+\begin{enumerate}
+\item What is a branch? Why are they useful?\\
+    \textbf{Answer:}
+    A branch is a pointer to a specific commit. They are useful because they allow you to work on different features without affecting the main branch. They also let multiple people easily work on seperate features of the same project.
+
+\item Starting with an empty repository, what sequence of commands/actions would result in the following commit graph? You may give a sequence of \texttt{git} command-line commands, or describe (with screenshots) how you would do this in your preferred graphical git interface.
+\begin{verbatim}
+A---B---C---D
+     \
+      E---F
+\end{verbatim}
+    \textbf{Answer:} Here the commands from git command line with basic messages:
+\begin{verbatim}
+    git init
+    git add file.txt
+    git commit -m "Commit A"
+
+    git commit -am "Commit B"
+
+    git branch feature-branch  # Create a new branch for E
+    git checkout feature-branch
+
+    git commit -am "Commit E"
+
+    git commit -am "Commit F"
+
+    git checkout main  # Switch back to main branch
+    git commit -am "Commit C"
+
+    git commit -am "Commit D"
+\end{verbatim}
+
+\item Why is a merge? Why are they useful?\\
+    \textbf{Answer:}
+    A merge is the process of combining changes from one branch to another. They're useful because they allow you to combine changes from different branches, i.e. two seperate people can work in two branches then combine their changes.
+
+\item Imagine you are currently at commit D above. What sequence of commands/actions would result in the following commit graph? You may give a sequence of \texttt{git} commands, or describe (with screenshots) how you would do this in your preferred graphical git interface.
+\begin{verbatim}
+A---B---C---D---G
+     \         /
+      E---F---/
+\end{verbatim}
+    \textbf{Answer:}Assume we are starting from commit D.
+
+    \begin{verbatim}
+    git checkout feature-branch
+    git commit -am "Commit F"
+    
+    git checkout main
+    git merge feature-branch -m "Merge into main"
+    git commit -am "Commit G"
+      
+
+    \end{verbatim}
+
+\item What is a merge conflict? When do they occur?\\
+    \textbf{Answer:}
+    A merge conflict occurs when Git can't automatically fix differences between two branches. The most common time this happens is when the same lines in a file are changed in both branches. This requires a manual fix.
+
+\item Starting with an empty repository, despite a sequence of commands/actions that would result in a merge conflict. Include the exact edits and \texttt{git} commands or screenshots of the graphical git interface. Include the output or screenshot that shows the resulting merge conflict.\\
+    \textbf{Answer:}
+    \begin{verbatim}
+    git init 
+    git add conflict.txt 
+    git commit -m "Commit A"
+
+    git branch feature-branch 
+    git checkout feature-branch 
+
+    git commit -am "Commit B"
+    git checkout main 
+    git commit -am "Commit C"
+    git merge feature-branch 
+    \end{verbatim}
+
+\end{enumerate}
+
+\subsection{Remotes}
+
+\begin{enumerate}
+\item What is a remote?\\
+    \textbf{Answer:}
+    A remote is a repository that is not on your local machine.
+
+\item What does pushing and pulling do?\\
+    \textbf{Answer:}
+    Pushing sends your changes to the remote repository, pulling gets the changes from the remote repository.
+
+\item Imagine you created a git repository for your project on your laptop and commit regularly, but only push your code to GitHub once a week on Sundays. Your laptop caught on fire on Friday. What can you do to get your code back?\\
+    \textbf{Answer:}
+    Just clone the repo from GitHub. Unfortunately, you'll lose the changes made between the last push and the death of your laptop.
+
+\end{enumerate}
+
+\section{\LaTeX}
+
+Find a source of each of the following types and add it to \texttt{references.bib}, with the appropriate data. Your sources do not have to relate to your project. Looking at \textcite{OverleafBibliographyManagement} and \textcite{WikipediaBibtex} may be helpful,
+
+\begin{itemize}
+\item a journal article
+\item a conference article
+\item a PhD or Master's thesis
+\item an article in an edited popular media venue (newspaper, magazine, etc.)
+\item a book
+\item a chapter of a book
+\item a YouTube video
+\item a piece of technical documentation (e.g., a programming language reference, and API documentation, etc.)
+\end{itemize}
+
+Additionally, in you own words, explain the difference between \texttt{{\textbackslash}cite\{\}} and \texttt{{\textbackslash}textcite\{\}}. When should they each be used? Demonstrate your answers by using one of them with each of your references from above.\\
+\textbf{Answer:}\\
+\texttt{\textbackslash textcite\{\}} integrates the citation into the text by printing the author’s name as part of the sentence (and the year in parentheses). More useful when you want to emphasize the authors contribution. In contrast, \texttt{{\textbackslash}cite\{\}} produces a citation that appears in parentheses. This form is useful when you want to support a statement without interrupting your flow. I often put these at the end of a sentence as a sort of supporting evidence for a claim I've said that's backed up by the source.
+
+Here are examples from my sources:\\
+
+\begin{itemize}
+    \item \textbf{Journal Article:}  
+    ``\textcite{einstein1905} laid the foundations of special relativity.''
+    
+    \item \textbf{Conference Article:}  
+    ``The study by \textcite{morris1970} on storage techniques has influenced...''
+    
+    \item \textbf{PhD Thesis:}  
+    ``As demonstrated in the work of \textcite{knuth1968}, algorithm analysis is a key part of computer science.''
+    
+    \item \textbf{Article in Popular Media:}  
+    ``Recent discussions on digital media trends can be found in \cite{monroe2015}, where the impact...''
+    
+    \item \textbf{Book:}  
+    ``Even the ideas presented in \textcite{turing1950} still influence computer science today.''
+    
+    \item \textbf{Chapter of a Book:}  
+    ``Information theory was revolutionized by \cite{shannon1948}, who introduced the concept of...''
+    
+    \item \textbf{YouTube Video:}  
+    ``For an explanation of temperature misconceptions, see \textcite{veritasium2012}.''
+    
+    \item \textbf{Technical Documentation:}  
+    ``Please refer to \cite{python3} for up-to-date information on syntax and libraries.''
+\end{itemize}
+
+\printbibliography
+
+\end{document}
